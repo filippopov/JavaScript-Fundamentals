@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function sumAndVAT(arr) {
+            let sum = 0;
+            for (let number of arr) {
+                sum += number;
+            }
+
+            let vat = sum * 0.2;
+            let total = sum + vat;
+
+            console.log(`sum = ${sum}`);
+            console.log(`VAT = ${vat}`);
+            console.log(`total = ${total}`);
+        }
+
+        sumAndVAT([1.20, 2.60, 3.50]);
+    </script>
+</body>
+</html>
